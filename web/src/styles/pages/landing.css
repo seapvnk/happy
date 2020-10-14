@@ -1,73 +1,57 @@
-#page-landing {
-    background: linear-gradient(329.54deg, #24b6d1 8%, #00c7c7 100%); 
-    width: 100vw;;
-    height: 100vh;  
+#page-map {
+    width: 100vw;
+    height: 100vh;
 
+    position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-#page-landing .content-wrapper {
-    position: relative;
-
-    width: 100%;
-    max-width: 1100px;
-
-    height: 100%;
-    max-height: 600px;
-
+#page-map aside {
+    width: 440px;
+    background: linear-gradient(329.54deg, #24b6d1 8%, #00c7c7 100%);
+    padding: 80px;
     display: flex;
-    align-items: flex-start;
     flex-direction: column;
     justify-content: space-between;
-
-    background: url('../../images/landing.svg') no-repeat 80% center;
-    background-size: contain;
 }
 
-#page-landing .content-wrapper main h1 {
-    max-width: 350px;
-    font-size: 76px;
-    font-weight: 900;
-    line-height: 70px;
+#page-map aside h2 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 42px;
+    margin-top: 64px;
 }
 
-#page-landing .content-wrapper main p {
-    max-width: 350px;
-    margin-top: 40px;
-    font-size: 24px;
-    line-height: 34px;
+#page-map aside p {
+    line-height: 28px;
+    margin-top: 24px;
 }
 
-.content-wrapper .location {
-    position: absolute;
-    right: 0;
-    top: 0;
-
-    font-size: 24px;
-    line-height: 34px;
-
+#page-map footer {
     display: flex;
     flex-direction: column;
-
-    text-align: right;
+    line-height: 24px;
 }
 
-.content-wrapper .location strong {
+#page-map strong {
     font-weight: 800;
 }
 
-.content-wrapper .enter-app {
-    position: absolute;
-    right: 0;
-    bottom: 0;
+#page-map .leaflet-container {
+    z-index: 5;
+}
 
-    width: 80px;
-    height: 80px;
-    background-color: #ffd666;
-    border-radius: 30px;
-    
+#page-map .create-orphanage {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    z-index: 10;
+
+    width: 64px;
+    height: 64px;
+    background-color: #15c3d6;
+    border-radius: 1.8rem;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,6 +59,6 @@
     transition: background-color .2s;
 }
 
-.content-wrapper .enter-app:hover {
-    background-color: #96feff;
+#page-map .create-orphanage:hover {
+    background-color: #17d6eb;
 }
