@@ -10,7 +10,7 @@
 */uploads
 
 # database
-.sqlite
+*/.sqlite
 
 # testing
 /coverage
